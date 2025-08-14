@@ -1,0 +1,14 @@
+{
+  "plugins": {
+    "review": true
+  },
+  "rules": {
+    "preset-japanese": true,
+    "preset-ja-technical-writing": {
+      "sentence-length": { "max": 120 }
+    },
+    "prh": {
+      "rulePaths": ["./prh.yml"]
+    }
+  }
+}

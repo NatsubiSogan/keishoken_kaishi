@@ -2,7 +2,7 @@
   "name": "review-template",
   "version": "0.0.2",
   "private": true,
-  "description": "",
+  "description": "このリポジトリはRe:VIEW用の書籍テンプレートです。Re:VIEWバージョン5.8に対応します。\r メンテナンスはTechBoosterが行っています。",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TechBooster/ReVIEW-Template.git"
@@ -28,15 +28,24 @@
     "web": "grunt web",
     "idgxml": "grunt idgxmlmaker",
     "vivliostyle": "grunt vivliostyle",
-    "test": "npm run html"
+    "test": "npm run html",
+    "lint:md": "textlint \"md/**/*.md\"",
+    "lint:re": "textlint \"articles/**/*.re\"",
+    "fix:md": "textlint \"md/**/*.md\" --fix"
   },
-  "dependencies": {},
   "devDependencies": {
     "grunt": "^1.6.1",
     "grunt-cli": "^1.4.3",
     "grunt-contrib-clean": "^2.0.1",
     "grunt-shell": "^4.0.0",
     "js-yaml": "^4.1.0",
-    "load-grunt-tasks": "^5.1.0"
-  }
+    "load-grunt-tasks": "^5.1.0",
+    "textlint": "^15.2.1",
+    "textlint-plugin-review": "^0.4.1",
+    "textlint-rule-preset-ja-technical-writing": "^12.0.2",
+    "textlint-rule-preset-japanese": "^10.0.4",
+    "textlint-rule-prh": "^6.1.0"
+  },
+  "main": "Gruntfile.js",
+  "keywords": []
 }

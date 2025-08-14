@@ -1,0 +1,6 @@
+services:
+  review:
+    image: ghcr.io/vvakame/review:5.8
+    working_dir: /work/articles
+    volumes:
+      - ./:/work

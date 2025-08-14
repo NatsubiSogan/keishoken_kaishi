@@ -1,0 +1,10 @@
+version: 1
+imports:
+  - node_modules/prh/prh-rules/media/WEB+DB_PRESS.yml
+  - ./prh-rules/house-style.yml
+rules:
+  - expected: Re:VIEW
+    pattern: /Re:view|ReVIEW/
+    specs:
+      - from: Re:view
+        to:   Re:VIEW

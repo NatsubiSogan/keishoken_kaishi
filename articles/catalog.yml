@@ -3,7 +3,7 @@ PREDEF:
 
 CHAPS:
   - article.re
-
+  - test.re
 APPENDIX:
 
 POSTDEF:
